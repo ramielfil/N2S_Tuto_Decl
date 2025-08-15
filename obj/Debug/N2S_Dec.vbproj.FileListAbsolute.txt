@@ -44,3 +44,16 @@ C:\DevExpress\N2S_Dec\N2S_Dec\obj\Debug\N2S_Dec.vbproj.Up2Date
 C:\DevExpress\N2S_Dec\N2S_Dec\obj\Debug\N2S_Dec.exe
 C:\DevExpress\N2S_Dec\N2S_Dec\obj\Debug\N2S_Dec.pdb
 C:\DevExpress\N2S_Dec\N2S_Dec\obj\Debug\N2S_Dec.exe.config
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\EPPlus.dll
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\EPPlus.Interfaces.dll
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\EPPlus.System.Drawing.dll
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\ExcelDataReader.DataSet.dll
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\ExcelDataReader.dll
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\EPPlus.xml
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\ExcelDataReader.pdb
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\ExcelDataReader.xml
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\ExcelDataReader.DataSet.xml
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\DevExpress\N2S_Dec\N2S_Dec\obj\Debug\N2S_Dec.FormImportExcel.resources

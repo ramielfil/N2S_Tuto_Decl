@@ -29,6 +29,8 @@
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
         Me.ribbonPage1 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.ribbonPageGroup1 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RibbonPageGroup2 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.ImportExcel = New DevExpress.XtraBars.BarButtonItem()
         CType(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -36,10 +38,10 @@
         '
         Me.ribbonControl1.EmptyAreaImageOptions.ImagePadding = New System.Windows.Forms.Padding(35, 37, 35, 37)
         Me.ribbonControl1.ExpandCollapseItem.Id = 0
-        Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.ribbonControl1.SearchEditItem, Me.BarButtonItem1})
+        Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.ribbonControl1.SearchEditItem, Me.BarButtonItem1, Me.ImportExcel})
         Me.ribbonControl1.Location = New System.Drawing.Point(0, 0)
         Me.ribbonControl1.Margin = New System.Windows.Forms.Padding(4)
-        Me.ribbonControl1.MaxItemId = 2
+        Me.ribbonControl1.MaxItemId = 3
         Me.ribbonControl1.Name = "ribbonControl1"
         Me.ribbonControl1.OptionsMenuMinWidth = 385
         Me.ribbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage1})
@@ -56,7 +58,7 @@
         '
         'ribbonPage1
         '
-        Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.ribbonPageGroup1})
+        Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.ribbonPageGroup1, Me.RibbonPageGroup2})
         Me.ribbonPage1.Name = "ribbonPage1"
         Me.ribbonPage1.Text = "Page1"
         '
@@ -65,6 +67,20 @@
         Me.ribbonPageGroup1.ItemLinks.Add(Me.BarButtonItem1)
         Me.ribbonPageGroup1.Name = "ribbonPageGroup1"
         Me.ribbonPageGroup1.Text = "Paramétrage"
+        '
+        'RibbonPageGroup2
+        '
+        Me.RibbonPageGroup2.ItemLinks.Add(Me.ImportExcel)
+        Me.RibbonPageGroup2.Name = "RibbonPageGroup2"
+        Me.RibbonPageGroup2.Text = "RibbonPageGroup2"
+        '
+        'ImportExcel
+        '
+        Me.ImportExcel.Caption = "Importaition Excel"
+        Me.ImportExcel.Id = 2
+        Me.ImportExcel.ImageOptions.Image = CType(resources.GetObject("ImportExcel.ImageOptions.Image"), System.Drawing.Image)
+        Me.ImportExcel.ImageOptions.LargeImage = CType(resources.GetObject("ImportExcel.ImageOptions.LargeImage"), System.Drawing.Image)
+        Me.ImportExcel.Name = "ImportExcel"
         '
         'Form1
         '
@@ -88,4 +104,6 @@
     Private WithEvents ribbonPage1 As DevExpress.XtraBars.Ribbon.RibbonPage
     Private WithEvents ribbonPageGroup1 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents ImportExcel As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents RibbonPageGroup2 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
 End Class
