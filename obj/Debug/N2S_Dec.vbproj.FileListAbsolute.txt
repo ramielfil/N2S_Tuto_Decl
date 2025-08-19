@@ -57,3 +57,5 @@ C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\ExcelDataReader.DataSet.pdb
 C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\ExcelDataReader.DataSet.xml
 C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
 C:\DevExpress\N2S_Dec\N2S_Dec\obj\Debug\N2S_Dec.FormImportExcel.resources
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\Newtonsoft.Json.dll
+C:\DevExpress\N2S_Dec\N2S_Dec\bin\Debug\Newtonsoft.Json.xml

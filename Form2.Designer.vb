@@ -76,6 +76,7 @@ Partial Class Form2
         '
         'GridControl1
         '
+        Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.Location = New System.Drawing.Point(0, 150)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"

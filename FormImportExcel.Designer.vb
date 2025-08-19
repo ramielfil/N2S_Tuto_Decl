@@ -32,6 +32,10 @@ Partial Class FormImportExcel
         Me.ComboBoxFeuilles = New System.Windows.Forms.ComboBox()
         Me.BTN_ImportExcel = New DevExpress.XtraEditors.SimpleButton()
         Me.BTN_EnregistrerBDD = New DevExpress.XtraEditors.SimpleButton()
+        Me.TxtFileName = New System.Windows.Forms.TextBox()
+        Me.TxtFilePath = New System.Windows.Forms.TextBox()
+        Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
+        Me.BTN_EnvoyerAPI = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -74,6 +78,7 @@ Partial Class FormImportExcel
         '
         'GridControl1
         '
+        Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.Location = New System.Drawing.Point(0, 150)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
@@ -105,18 +110,55 @@ Partial Class FormImportExcel
         '
         'BTN_EnregistrerBDD
         '
-        Me.BTN_EnregistrerBDD.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
+        Me.BTN_EnregistrerBDD.ImageOptions.Image = CType(resources.GetObject("BTN_EnregistrerBDD.ImageOptions.Image"), System.Drawing.Image)
         Me.BTN_EnregistrerBDD.Location = New System.Drawing.Point(614, 12)
         Me.BTN_EnregistrerBDD.Name = "BTN_EnregistrerBDD"
         Me.BTN_EnregistrerBDD.Size = New System.Drawing.Size(154, 44)
         Me.BTN_EnregistrerBDD.TabIndex = 6
         Me.BTN_EnregistrerBDD.Text = "Enregistrer"
         '
+        'TxtFileName
+        '
+        Me.TxtFileName.Location = New System.Drawing.Point(163, 84)
+        Me.TxtFileName.Name = "TxtFileName"
+        Me.TxtFileName.Size = New System.Drawing.Size(100, 22)
+        Me.TxtFileName.TabIndex = 7
+        '
+        'TxtFilePath
+        '
+        Me.TxtFilePath.Location = New System.Drawing.Point(285, 83)
+        Me.TxtFilePath.Name = "TxtFilePath"
+        Me.TxtFilePath.Size = New System.Drawing.Size(361, 22)
+        Me.TxtFilePath.TabIndex = 8
+        '
+        'LabelControl1
+        '
+        Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Arial", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl1.Appearance.Options.UseFont = True
+        Me.LabelControl1.Location = New System.Drawing.Point(12, 85)
+        Me.LabelControl1.Name = "LabelControl1"
+        Me.LabelControl1.Size = New System.Drawing.Size(141, 16)
+        Me.LabelControl1.TabIndex = 10
+        Me.LabelControl1.Text = "Détails du fichier Excel :"
+        '
+        'BTN_EnvoyerAPI
+        '
+        Me.BTN_EnvoyerAPI.ImageOptions.Image = CType(resources.GetObject("BTN_EnvoyerAPI.ImageOptions.Image"), System.Drawing.Image)
+        Me.BTN_EnvoyerAPI.Location = New System.Drawing.Point(654, 77)
+        Me.BTN_EnvoyerAPI.Name = "BTN_EnvoyerAPI"
+        Me.BTN_EnvoyerAPI.Size = New System.Drawing.Size(133, 30)
+        Me.BTN_EnvoyerAPI.TabIndex = 11
+        Me.BTN_EnvoyerAPI.Text = "Envoyer à l'API"
+        '
         'FormImportExcel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.BTN_EnvoyerAPI)
+        Me.Controls.Add(Me.LabelControl1)
+        Me.Controls.Add(Me.TxtFilePath)
+        Me.Controls.Add(Me.TxtFileName)
         Me.Controls.Add(Me.BTN_EnregistrerBDD)
         Me.Controls.Add(Me.BTN_ImportExcel)
         Me.Controls.Add(Me.ComboBoxFeuilles)
@@ -129,6 +171,7 @@ Partial Class FormImportExcel
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -141,4 +184,8 @@ Partial Class FormImportExcel
     Friend WithEvents ComboBoxFeuilles As ComboBox
     Friend WithEvents BTN_ImportExcel As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents BTN_EnregistrerBDD As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents TxtFileName As TextBox
+    Friend WithEvents TxtFilePath As TextBox
+    Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents BTN_EnvoyerAPI As DevExpress.XtraEditors.SimpleButton
 End Class
